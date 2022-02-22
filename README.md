@@ -7,36 +7,23 @@ The purpose this analysis is to ensure that the financial-backing of a non-profi
 ## Results
 
 * What variable(s) are considered the target(s) for your model?
-  * The variable considered the (y) variable AKA target is: "IS_SUCCESSFUL".
+  * The variable considered the (y) variable AKA "target" is: "IS_SUCCESSFUL".
 * What variable(s) are considered to be the features for your model?
-  * 
+  * The variables considered features by my model are Application type, affiliation, classification, organization, income amount, user case, and status.
 * What variable(s) are neither targets nor features, and should be removed from the input data?
-
+ * EIN and name were neither targets nor features and should be removed from the input data.
+ 
 ### Compiling, Training, and Evaluating the Model
-How many neurons, layers, and activation functions did you select for your neural network model, and why?
-Were you able to achieve the target model performance?
-What steps did you take to try and increase model performance?
+* How many neurons, layers, and activation functions did you select for your neural network model, and why?
+  * the initial model contained 1 input layer, 3 hidden layers and 1 output layer with a sigmoid activation function attached 
+* Were you able to achieve the target model performance?
+ * The initial model recieved a 77% accurracy rating without any optimization. 
+* What steps did you take to try and increase model performance?
+ * I tried to increase model performance by decreasing the number of features. It worked in the opposite manner and decreased accurracy to 68%.
+ * 
 ## Summary
 
-Results:
+#Reccomendation
 
-There is a bulleted list that answers all six questions (15 pt)
-Summary:
+The intial model outputted an acceptable accurracy rating on its own. If I was to add a reccommendation to this process, I would reccommend experimenting with other classification models to see if one could increase accurracy percentage.
 
-There is a summary of the results (2 pt)
-There is a recommendation on using a different model to solve the classification problem, and justification (3 pt)
-Submission
-
-Overview of the analysis: Explain the purpose of this analysis.
-
-Results: Using bulleted lists and images to support your answers, address the following questions.
-
-Data Preprocessing
-What variable(s) are considered the target(s) for your model?
-What variable(s) are considered to be the features for your model?
-What variable(s) are neither targets nor features, and should be removed from the input data?
-Compiling, Training, and Evaluating the Model
-How many neurons, layers, and activation functions did you select for your neural network model, and why?
-Were you able to achieve the target model performance?
-What steps did you take to try and increase model performance?
-Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
